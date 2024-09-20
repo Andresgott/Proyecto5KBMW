@@ -1,0 +1,16 @@
+.background{
+  display: inline-block;
+  position:absolute;
+}
+
+.background-image{
+  left: 0;
+  width: 100vw;  /* Abarca el 100% del ancho de la ventana */
+  height: 100vh; /* Abarca el 100% de la altura de la ventana */
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
+  z-index: -1; /* Envía la imagen al fondo pero sin ser background */
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 0;
+
+}
