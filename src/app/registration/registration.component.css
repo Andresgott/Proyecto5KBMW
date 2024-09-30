@@ -1,0 +1,69 @@
+.card {
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 3.5%;
+  width: 75%;
+  margin: auto;
+  font-family: "Nunito Sans";
+}
+
+h1 {
+  color: #0066b1;
+  font-size: 400%;
+  font-family: "Nunito Sans";
+  padding-left: 9%;
+}
+/* Estilo para el título */
+h2 {
+  color: #0066b1;
+  font-size: 1.5em;
+  font-family: "Nunito Sans";
+}
+
+/* Estilo para la lista de elegibilidad */
+.card ul {
+  padding-left: 3.5%;
+  font-family: "Nunito Sans";
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para el texto en negrita */
+.card b {
+  font-weight: bold;
+  font-family: "Nunito Sans";
+}
+
+
+.container {
+  text-align: left;
+  padding-left: 9%;
+}
+
+.button {
+  display: inline-block; /* Hace que el enlace sea como un botón */
+  background-color: #0066b1; /* Color azul */
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1.7%;
+  font-family: "Nunito Sans";
+  left: 20%;
+}
+
+.button:hover {
+  background-color: #0066b1;
+}

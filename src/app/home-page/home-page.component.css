@@ -1,16 +1,244 @@
-.background{
-  display: inline-block;
-  position:absolute;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
-.background-image{
-  left: 0;
-  width: 100vw;  /* Abarca el 100% del ancho de la ventana */
-  height: 100vh; /* Abarca el 100% de la altura de la ventana */
-  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
-  z-index: -1; /* Envía la imagen al fondo pero sin ser background */
+.imageBCK {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 0 0;
+  opacity: 0.8;
+}
 
+.section {
+  position: relative;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+h2, h3 {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin: 10px 0;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: white;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+h3 {
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+
+
+.countdown-section-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items:center;
+  margin: 0 10px;
+
+}
+
+.countdown-face {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-label {
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f1f3f9;
+  margin-top: 5px;
+  text-align: center;
+
+}
+
+.btn-countdown-register{
+  font-size: 1.2rem;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  background-color:#0066B1;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-left: 120px;
+  margin-right: 120px;
+  text-decoration: none;
+}
+
+.btn-countdown-register:hover{
+  background-color: #a88932;
+}
+
+.white-section {
+  margin-top: 30px;
+  height: 100vh;
+  background-color: white;
+}
+
+.card {
+  display: flex; /* Utilizamos Flexbox para la tarjeta */
+  justify-content: space-between; /* Espacia el contenido y la imagen */
+  align-items: center; /* Alinea verticalmente */
+  padding: 20px; /* Espacio interno de la tarjeta */
+  background-color: #f8f9fa; /* Color de fondo de la tarjeta */
+  border: 1px solid #ddd; /* Borde de la tarjeta */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+.card-content {
+  flex: 1; /* Ocupa el espacio disponible */
+  margin-right: 20px; /* Espacio a la derecha entre el contenido y la imagen */
+}
+
+.cristoFoto {
+  max-width: 500px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+.card h3 {
+  font-size: 36px;
+  background-color:#f8f9fa;
+  border-radius: 0%;
+  margin-bottom: 15px;
+  color: #0066B1;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.card p, .card ul {
+  font-size: 24px;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+}
+
+.logo-container {
+  display: flex; /* Usamos flexbox para alinear las imágenes */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center;
+  margin-bottom: 20px; /* Espacio debajo del contenedor de logos */
+}
+
+.bmwLogo, .masterLogo,.prorideLogo {
+  max-width: 200px; /* Ajusta el tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 0 100px; /* Espacio entre las imágenes */
+}
+
+.footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #a88932;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;  /* Asegura que haya espacio entre los elementos */
+  align-items: center;  /* Centra los elementos verticalmente */
+  flex-wrap: wrap;  /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-logo img {
+  max-width: 170px;  /* Ajusta el tamaño máximo de las imágenes */
+  height: auto;
+  margin: 0 15px;  /* Espacio horizontal entre los logos */
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .countdown-face {
+    font-size: 40px;
+    padding: 8px 15px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .slogen {
+    font-size: 16px;
+  }
 }
