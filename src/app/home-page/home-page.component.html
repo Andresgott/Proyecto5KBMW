@@ -1,53 +1,55 @@
-<body>
-<div class="background">
-  <img class="imageBCK" src="\assets\bckHomePage.png" alt="bmw logo">
-</div>
+<app-header-home></app-header-home>
 
-<div class="section section-default">
-  <div class="countdown-section-wrap">
-    <div id="host-countdown" data-component="Countdown" data-date="1727560800">
-      <h2 class="countdown-section-header"></h2>
-      <h2>BMW 5K-10K</h2>
-      <h3>NOVIEMBRE 17, 2024</h3>
-      <div class="countdown-container">
-        <div class="countdown-unit">
-          <div class="countdown-face">{{ days }}</div>
-          <div class="countdown-label">Days</div>
+<div>
+  <div class="background">
+    <img class="imageBCK" src="\assets\bckHomePage.png" alt="bmw logo">
+  </div>
+
+  <div class="section section-default">
+    <div class="countdown-section-wrap">
+      <div id="host-countdown" data-component="Countdown" data-date="1727560800">
+        <h2 class="countdown-section-header"></h2>
+        <h2>BMW 5K-10K</h2>
+        <h3>NOVIEMBRE 17, 2024</h3>
+        <div class="countdown-container">
+          <div class="countdown-unit">
+            <div class="countdown-face">{{ days }}</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-face">{{ hours }}</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-face">{{ minutes }}</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-unit">
+            <div class="countdown-face">{{ seconds }}</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
         </div>
-        <div class="countdown-unit">
-          <div class="countdown-face">{{ hours }}</div>
-          <div class="countdown-label">Hours</div>
-        </div>
-        <div class="countdown-unit">
-          <div class="countdown-face">{{ minutes }}</div>
-          <div class="countdown-label">Minutes</div>
-        </div>
-        <div class="countdown-unit">
-          <div class="countdown-face">{{ seconds }}</div>
-          <div class="countdown-label">Seconds</div>
-        </div>
+        <a href="/" rel="" class="btn btn-primary btn-countdown-register btn-lg">Event Info <i class="icon-arrow-right"></i></a>
       </div>
-      <a href="/" rel="" class="btn btn-primary btn-countdown-register btn-lg">Event Info <i class="icon-arrow-right"></i></a>
     </div>
   </div>
-</div>
 
-<div class="white-section">
-  <div class="logo-container">
-    <img class="bmwLogo" src="\assets\BMW-logo.png" alt="bmw logo">
-    <img class="masterLogo" src="\assets\WEBfondoblanco.jpg" alt="master logo">
-    <img class="prorideLogo" src="\assets\prorideLogo.png" alt="proride logo">
-  </div>
-  <div class="card">
-    <div class="card-content">
-      <h3>1.era edición del evento Running 5k-10k de BMW en Cochabamba</h3>
-      <p>
-        Forma parte de la primera edición del 5k-10k BMW y disfruta de una experiencia única, combinando pasión por el deporte y la adrenalina que caracteriza a nuestra marca.
-      </p>
+  <div class="white-section">
+    <div class="logo-container">
+      <img class="bmwLogo" src="\assets\BMW-logo.png" alt="bmw logo">
+      <img class="masterLogo" src="\assets\WEBfondoblanco.jpg" alt="master logo">
+      <img class="prorideLogo" src="\assets\prorideLogo.png" alt="proride logo">
     </div>
-    <img class="cristoFoto" src="\assets\cristo.jpg" alt="cristo">
-  </div>
+    <div class="card">
+      <div class="card-content">
+        <h3>1.era edición del evento Running 5k-10k de BMW en Cochabamba</h3>
+        <p>
+          Forma parte de la primera edición del 5k-10k BMW y disfruta de una experiencia única, combinando pasión por el deporte y la adrenalina que caracteriza a nuestra marca.
+        </p>
+      </div>
+      <img class="cristoFoto" src="\assets\cristo.jpg" alt="cristo">
+    </div>
 
+  </div>
 </div>
 <app-footer></app-footer>
-</body>
