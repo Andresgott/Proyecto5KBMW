@@ -9,6 +9,8 @@ import { RegistrationComponent } from './registration/registration.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuspiciadoresComponent } from './auspiciadores/auspiciadores.component';
 import { TuCarreraComponent } from './tu-carrera/tu-carrera.component';
+import { SobreBmwComponent } from './sobre-bmw/sobre-bmw.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -18,18 +20,22 @@ import { TuCarreraComponent } from './tu-carrera/tu-carrera.component';
     RegistrationComponent,
     FooterComponent,
     AuspiciadoresComponent,
-    TuCarreraComponent
+    TuCarreraComponent,
+    SobreBmwComponent
   ],
   imports: [
     BrowserModule,
     RouterOutlet,
+    SlickCarouselModule,
     RouterModule.forRoot([
       { path: '', component: HomePageComponent },
       { path: 'registration', component: RegistrationComponent },
-      { path: 'your-race', component: TuCarreraComponent }
+      { path: 'your-race', component: TuCarreraComponent },
+      {path: 'sobreBmw', component: SobreBmwComponent}
     ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
