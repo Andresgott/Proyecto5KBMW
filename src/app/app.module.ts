@@ -11,6 +11,7 @@ import { AuspiciadoresComponent } from './auspiciadores/auspiciadores.component'
 import { TuCarreraComponent } from './tu-carrera/tu-carrera.component';
 import { SobreBmwComponent } from './sobre-bmw/sobre-bmw.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { PreparationComponent } from './preparation/preparation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterComponent,
     AuspiciadoresComponent,
     TuCarreraComponent,
-    SobreBmwComponent
+    SobreBmwComponent,
+    PreparationComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
       { path: '', component: HomePageComponent },
       { path: 'registration', component: RegistrationComponent },
       { path: 'your-race', component: TuCarreraComponent },
-      {path: 'sobreBmw', component: SobreBmwComponent}
+      {path: 'sobreBmw', component: SobreBmwComponent},
+      {path: "preparation", component: PreparationComponent},
     ])
   ],
   providers: [],

@@ -8,7 +8,7 @@
   width: 75%;
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
+  font-size: 1.3em;
 }
 
 h1 {
@@ -16,6 +16,7 @@ h1 {
   font-size: 400%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding-left: 9%;
+  margin-top: 4.5%;
 }
 /* Estilo para el título */
 h2 {
