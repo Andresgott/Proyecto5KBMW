@@ -14,6 +14,7 @@ import { SliderSponsorsComponent } from './slider-sponsors/slider-sponsors.compo
 import { PreparationComponent } from './preparation/preparation.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { PreparationComponent } from './preparation/preparation.component';
       { path: 'your-race', component: TuCarreraComponent },
       {path: 'sobreBmw', component: SobreBmwComponent},
       {path: "preparation", component: PreparationComponent},
+      {path: 'auspiciadores', component:AuspiciadoresComponent}
     ],
 
     //Con estos dos permito ir a secciones de los componentes

@@ -1,0 +1,91 @@
+.Title
+{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10%;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #0066B1;
+}
+
+.Logo{
+  max-width: 350px; /* Ajusta el tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 0 30px; /* Espacio entre las imágenes */
+}
+
+.Title-sponsor
+{
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Main-sponsor
+{
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.subtitle
+{
+  flex-direction: column;
+  font-weight: bold;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #262626;
+}
+
+.logos
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.Sponsors
+{
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logos1
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.logos2
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.Partners
+{
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+@media (max-width: 768px)
+{
+  .Logo{
+    max-width: 120px; /* Ajusta el tamaño máximo de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 5px; /* Espacio entre las imágenes */
+  }
+
+}

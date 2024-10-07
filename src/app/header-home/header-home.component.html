@@ -13,12 +13,10 @@
      </div>
 
      <div class="header-bottom">
-      <!-- Botón de menú burger -->
       <a class="mburger mburger--collapse" href="javascript:void(0);" (click)="toggleMenu()">
         <b></b><b></b><b></b>
       </a>
 
-      <!-- Navegación principal -->
       <nav id="mainnavigation" class="bp-page-header navbar navbar-mainnavigation" [ngClass]="{'show': isMenuOpen}">
         <ul class="navbar-nav">
           <li class="nav-item dropdown dropdown-hover">
@@ -71,10 +69,6 @@
             <a routerLink="/auspiciadores" routerLinkActive="active" class="nav-link dropdown-toggle" title="Auspiciadores">
               <span class="nav-link-text">AUSPICIADORES</span>
             </a>
-            <ul class="dropdown-menu">
-              <li><a routerLink="/auspiciadores" routerLinkActive="active" class="dropdown-item">Nuestros Auspiciadores</a></li>
-              <li><a href="https://www.scc-events.com" class="dropdown-item" target="_blank" title="Hazte Miembro" rel="noreferrer">Hazte Miembro</a></li>
-            </ul>
           </li>
         </ul>
       </nav>

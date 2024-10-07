@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { Component } from '@angular/core';
     <section class="content">
       <app-header-home></app-header-home>
       <router-outlet></router-outlet>
-      <app-slider-sponsors></app-slider-sponsors>
+      <app-slider-sponsors *ngIf="showSponsors"></app-slider-sponsors>
       <app-footer></app-footer>
     </section>
   </main>
@@ -19,4 +20,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BMW RUNNING';
+
+  showSponsors: boolean = true;
+
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.showSponsors = !event.url.includes('/auspiciadores');
+      }
+    });
+  }
 }
