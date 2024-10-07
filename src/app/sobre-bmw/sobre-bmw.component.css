@@ -3,6 +3,9 @@
   justify-content:center; /* Centra los elementos horizontalmente */
   align-items: center;     /* Alinea los elementos verticalmente */
   height: 60vh;           /* O la altura que desees */
+  margin-bottom: 100px;
+  padding-bottom: 7.5%;
+  
 }
 
 .video-content {
@@ -10,7 +13,7 @@
   align-items:center;     /* Alinea el video y el texto verticalmente */
   justify-content: center;
   gap: 20px;               /* Espacio entre el video y el título */
-
+  
 }
 
 h2 {
@@ -33,7 +36,10 @@ video
   background-color: #f8f9fa; /* Color de fondo de la tarjeta */
   border: 1px solid #ddd; /* Borde de la tarjeta */
   border-radius: 8px; /* Bordes redondeados */
-  margin-bottom: 20px; /* Espacio entre tarjetas */
+  margin-bottom: 100px;/* Espacio entre tarjetas  */
+  padding-bottom: 7.5%;
+  padding-top: 7.5%;
+  
 }
 
 .card-content {
@@ -131,9 +137,11 @@ video
   background-color: #262626; /* Color de fondo de la tarjeta */
   border: 1px solid #ddd; /* Borde de la tarjeta */
   border-radius: 8px; /* Bordes redondeados */
-  margin-bottom: 20px; /* Espacio entre tarjetas */
+  margin-bottom: 100px; /* Espacio entre tarjetas */
   color: #0066B1;
   font-family:BMWTypeNextLatin, Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+  padding-bottom: 7.5%;
+  padding-top: 7.5%;
 }
 
 .card2 h3

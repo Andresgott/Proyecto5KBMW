@@ -55,15 +55,15 @@
           </li>
 
           <li class="nav-item dropdown dropdown-hover">
-            <a routerLink="/sobreBmw" routerLinkActive="active" class="nav-link dropdown-toggle" title="Sobre BMW">
+            <a class="nav-link dropdown-toggle" title="Sobre BMW">
               <span class="nav-link-text">SOBRE BMW</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a routerLink="/sobreBmw/motorsport" routerLinkActive="active" class="dropdown-item">Motorsport</a></li>
-              <li><a routerLink="/sobreBmw/motorsport" routerLinkActive="active" class="dropdown-item">Motorrad</a></li>
-              <li><a routerLink="/sobreBmw/electricos" routerLinkActive="active" class="dropdown-item">BMWi</a></li>
-              <li><a routerLink="/sobreBmw/historia" routerLinkActive="active" class="dropdown-item">Historia</a></li>
-              <li><a routerLink="/sobreBmw/historia" routerLinkActive="active" class="dropdown-item">Podcast</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="motorsport" routerLinkActive="active" class="dropdown-item">Motorsport</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="motorrad" routerLinkActive="active" class="dropdown-item">Motorrad</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="BMWi" routerLinkActive="active" class="dropdown-item">BMWi</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="historia" routerLinkActive="active" class="dropdown-item">Historia</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="podcast" routerLinkActive="active" class="dropdown-item">Podcast</a></li>
             </ul>
           </li>
 
