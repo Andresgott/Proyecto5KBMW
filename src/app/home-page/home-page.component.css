@@ -17,6 +17,16 @@
   opacity: 0.8;
 }
 
+.imageBCKCelu
+{
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+}
 .section {
   position: relative;
   font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -212,6 +222,15 @@ h3 {
 
   h3 {
     font-size: 16px;
+  }
+
+  .imageBCK
+  {
+    display: none;
+  }
+  .imageBCKCelu
+  {
+    display:inline;
   }
 
 }
