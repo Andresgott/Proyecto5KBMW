@@ -26,8 +26,11 @@
               <span class="nav-link-text">REGISTRO</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item">Registrarse</a></li>
-              <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item">Extras</a></li>
+              <li><a [routerLink]="['/registration']" fragment="registro" routerLinkActive="active" class="dropdown-item" title="Registration information"><span class="dropdown-text">Registrarse</span></a></li>
+              <li>
+                <a [routerLink]="['/registration']" fragment="extras" routerLinkActive="active" class="dropdown-item" title="Extras">
+                  <span class="dropdown-text">Extras</span>
+                </a>
             </ul>
           </li>
 
@@ -36,8 +39,8 @@
               <span class="nav-link-text">PREPARACIÓN</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a routerLink="/preparation/event-info" routerLinkActive="active" class="dropdown-item">Información del evento</a></li>
-              <li><a routerLink="/preparation/schedule" routerLinkActive="active" class="dropdown-item">Agenda</a></li>
+              <li><a [routerLink]="['/preparation']" fragment="sobre-el-evento-section" routerLinkActive="active" class="dropdown-item" title="Sobre el evento"><span class="dropdown-text">Sobre el evento</span></a></li>
+              <li><a [routerLink]="['/preparation']" fragment="important-info" routerLinkActive="active" class="dropdown-item" title="Event Info"><span class="dropdown-text">Informacion importante</span></a></li>
             </ul>
           </li>
 
