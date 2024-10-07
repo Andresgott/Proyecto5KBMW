@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
     <section class="content">
       <app-header-home></app-header-home>
       <router-outlet></router-outlet>
+      <app-slider-sponsors></app-slider-sponsors>
       <app-footer></app-footer>
     </section>
   </main>

@@ -1,5 +1,5 @@
 <header id="page-header" class="fixed-top">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <div class="header-wrap">
     <a class="navbar-brand navbar-brand-image" href=""><img class="navbar-brand-logo-normal" src="\assets\bmwCOCHArunningLogo.jpg" alt="bmw logo" height="80" width="280"></a>
      <div class="header-top">
@@ -13,58 +13,66 @@
      </div>
 
      <div class="header-bottom">
-        <a class="mburger mburger--collapse" href="#menu"><b></b><b></b><b></b></a>
-        <nav id="mainnavigation" class="bp-page-header navbar navbar-mainnavigation collapse navbar-primary navbar-has-image navbar-top">
-           <ul class="navbar-nav">
-              <li class="nav-item dropdown dropdown-hover">
-                 <a routerLink="/registration" routerLinkActive="active" id="nav-item-1691" class="nav-link dropdown-toggle" title="Registro" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">REGISTRO</span></a>
-                 <ul class="dropdown-menu" aria-labelledby="nav-item-1691">
-                    <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item" title="Registration information"><span class="dropdown-text">Registrarse</span></a></li>
-                    <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item" title="Extras"><span class="dropdown-text">Extras</span></a></li>
-                 </ul>
-              </li>
-              <li class="nav-item dropdown dropdown-hover">
-                 <a href="/en/preparation/about-the-event" id="nav-item-1693" class="nav-link dropdown-toggle" title="Preparation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">PREPARACION</span></a>
-                 <ul class="dropdown-menu" aria-labelledby="nav-item-1693">
-                    <li><a href="/en/preparation/about-the-event" class="dropdown-item" title="Sobre el evento"><span class="dropdown-text">Sobre el evento</span></a></li>
-                    <li><a href="/en/preparation/event-info" class="dropdown-item" title="Event Info"><span class="dropdown-text">Informacion importante</span></a></li>
-                 </ul>
-              </li>
-              <li class="nav-item dropdown dropdown-hover">
-                 <a href="/en/your-race/race-day-for-participants" id="nav-item-1695" class="nav-link dropdown-toggle" title="Your Race" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">TU CARRERA</span></a>
-                 <ul class="dropdown-menu" aria-labelledby="nav-item-1695">
-                    <li><a href="" class="dropdown-item" title="Race day for participants"><span class="dropdown-text">Dia de carrera para partipantes</span></a></li>
-                    <li><a href="/en/your-race/race-day-for-spectators" class="dropdown-item" title="Race day for spectators"><span class="dropdown-text">Dia de carrera para espectadores</span></a></li>
-                    <li><a href="/en/your-race/course" class="dropdown-item" title="Course"><span class="dropdown-text">Ruta</span></a></li>
-                    <li><a href="/en/your-race/results" class="dropdown-item" title="Results"><span class="dropdown-text">Resultados</span></a></li>
-                 </ul>
-              </li>
-              <li class="nav-item dropdown dropdown-hover">
-                 <a href="/en/sustainability/sustainability-at-the-bm" id="nav-item-1696" class="nav-link dropdown-toggle" title="Sustainability" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">CARIDAD</span></a>
-                 <ul class="dropdown-menu" aria-labelledby="nav-item-1696">
-                    <li><a href="/en/sustainability/sustainability-at-the-bm" class="dropdown-item" title="Sustainability at the BM"><span class="dropdown-text">Fundacion nombre</span></a></li>
-                 </ul>
-              </li>
-              <li class="nav-item dropdown dropdown-hover">
-                 <a routerLink="/sobreBmw" id="nav-item-1697" class="nav-link dropdown-toggle" title="News &amp; Media" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">SOBRE BMW</span></a>
-                 <ul class="dropdown-menu" aria-labelledby="nav-item-1697">
-                    <li><a href="/en/news-media/news-blog" class="dropdown-item" title="News &amp; Blog"><span class="dropdown-text">Motorsport</span></a></li>
-                    <li><a href="/en/news-media/magazine" class="dropdown-item" title="Magazine"><span class="dropdown-text">Motorrad</span></a></li>
-                    <li><a href="/en/news-media/photos" class="dropdown-item" title="Photos"><span class="dropdown-text">Electricos</span></a></li>
-                    <li><a href="/en/news-media/history" class="dropdown-item" title="History"><span class="dropdown-text">Historia</span></a></li>
-                 </ul>
-              </li>
-              <li class="nav-item dropdown dropdown-hover">
-                 <a href="/auspiciadores" id="nav-item-1698" class="nav-link dropdown-toggle" title="Sponsors &amp; partners" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">AUSPICIADORES</span></a>
-                 <ul class="dropdown-menu" aria-labelledby="nav-item-1698">
-                    <li><a href="/en/sponsoren-partner/sponsors-partners" class="dropdown-item" title="Sponsors &amp; partners"><span class="dropdown-text">Auspiciadores</span></a></li>
-                    <li><a href="https://www.scc-events.com/en/get-involved/sponsorships" class="dropdown-item" target="_blank" title="Become a partner" rel="noreferrer"><span class="dropdown-text">Hazte miembro</span></a></li>
-                 </ul>
-              </li>
-           </ul>
-           <ul class="navbar-nav"></ul>
-        </nav>
-     </div>
+      <!-- Botón de menú burger -->
+      <a class="mburger mburger--collapse" href="javascript:void(0);" (click)="toggleMenu()">
+        <b></b><b></b><b></b>
+      </a>
+
+      <!-- Navegación principal -->
+      <nav id="mainnavigation" class="bp-page-header navbar navbar-mainnavigation" [ngClass]="{'show': isMenuOpen}">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/registration" routerLinkActive="active" class="nav-link dropdown-toggle" title="Registro">
+              <span class="nav-link-text">REGISTRO</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item">Registrarse</a></li>
+              <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item">Extras</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/preparation" routerLinkActive="active" class="nav-link dropdown-toggle" title="Preparación">
+              <span class="nav-link-text">PREPARACIÓN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/preparation/event-info" routerLinkActive="active" class="dropdown-item">Información del evento</a></li>
+              <li><a routerLink="/preparation/schedule" routerLinkActive="active" class="dropdown-item">Agenda</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/your-race" routerLinkActive="active" class="nav-link dropdown-toggle" title="Tu Carrera">
+              <span class="nav-link-text">TU CARRERA</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/your-race/race-day" routerLinkActive="active" class="dropdown-item">Día de la Carrera</a></li>
+              <li><a routerLink="/your-race/results" routerLinkActive="active" class="dropdown-item">Resultados</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/sobreBmw" routerLinkActive="active" class="nav-link dropdown-toggle" title="Sobre BMW">
+              <span class="nav-link-text">SOBRE BMW</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/sobreBmw/historia" routerLinkActive="active" class="dropdown-item">Historia</a></li>
+              <li><a routerLink="/sobreBmw/motorsport" routerLinkActive="active" class="dropdown-item">Motorsport</a></li>
+              <li><a routerLink="/sobreBmw/electricos" routerLinkActive="active" class="dropdown-item">Vehículos Eléctricos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/auspiciadores" routerLinkActive="active" class="nav-link dropdown-toggle" title="Auspiciadores">
+              <span class="nav-link-text">AUSPICIADORES</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/auspiciadores" routerLinkActive="active" class="dropdown-item">Nuestros Auspiciadores</a></li>
+              <li><a href="https://www.scc-events.com" class="dropdown-item" target="_blank" title="Hazte Miembro" rel="noreferrer">Hazte Miembro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <div class="navbar-toggler d-none"></div>
 </header>

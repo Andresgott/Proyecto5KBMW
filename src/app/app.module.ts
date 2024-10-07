@@ -11,6 +11,7 @@ import { AuspiciadoresComponent } from './auspiciadores/auspiciadores.component'
 import { TuCarreraComponent } from './tu-carrera/tu-carrera.component';
 import { SobreBmwComponent } from './sobre-bmw/sobre-bmw.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SliderSponsorsComponent } from './slider-sponsors/slider-sponsors.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     FooterComponent,
     AuspiciadoresComponent,
     TuCarreraComponent,
-    SobreBmwComponent
+    SobreBmwComponent,
+    SliderSponsorsComponent
   ],
   imports: [
     BrowserModule,

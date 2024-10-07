@@ -1,17 +1,17 @@
 .background {
-  position: absolute;
+  position: absolute; /* El fondo se mantiene fijo mientras se desplaza el contenido */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
+  min-height: 100vh; /* Asegura que ocupe al menos la altura completa de la pantalla */
+  z-index: -1; /* El fondo se coloca detrás del contenido */
   overflow: hidden;
 }
 
 .imageBCK {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
   transition: transform 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   opacity: 0.8;
@@ -116,6 +116,7 @@ h3 {
 
 .white-section {
   margin-top: 30px;
+  width: 100%;
   height: 100vh;
   background-color: white;
 }
@@ -129,6 +130,7 @@ h3 {
   border: 1px solid #ddd; /* Borde de la tarjeta */
   border-radius: 8px; /* Bordes redondeados */
   margin-bottom: 20px; /* Espacio entre tarjetas */
+
 }
 
 .card-content {
@@ -178,67 +180,41 @@ h3 {
   margin: 0 100px; /* Espacio entre las imágenes */
 }
 
-.footer {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: #a88932;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-around;  /* Asegura que haya espacio entre los elementos */
-  align-items: center;  /* Centra los elementos verticalmente */
-  flex-wrap: wrap;  /* Permite que los elementos se ajusten en pantallas pequeñas */
-}
-
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.footer-logo img {
-  max-width: 170px;  /* Ajusta el tamaño máximo de las imágenes */
-  height: auto;
-  margin: 0 15px;  /* Espacio horizontal entre los logos */
-}
-
-.footer-text {
-  margin-bottom: 10px;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-
 @media (max-width: 768px) {
-  .countdown-face {
-    font-size: 40px;
-    padding: 8px 15px;
+  .bmwLogo, .masterLogo, .prorideLogo {
+    margin: 0 20px;
+    max-width: 100px; /* Ajusta el tamaño para pantallas pequeñas */
   }
 
-  h2 {
-    font-size: 28px;
+  .cristoFoto
+  {
+    max-width: 40%;
+  }
+
+  .card p, .card ul {
+    font-size: 16px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .card h3 {
+    font-size: 24px;
+
+  }
+
+  .countdown-face
+  {
+    font-size: 25px;
+  }
+
+  h2{
+    font-size: 24px;
+
   }
 
   h3 {
-    font-size: 20px;
-  }
-
-  .slogen {
     font-size: 16px;
   }
+
 }
+
+
+

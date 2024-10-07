@@ -148,5 +148,50 @@ video
   font-family:BMWTypeNextLatin, Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
 }
 
+@media (max-width: 768px)
+{
+  .card, .card2 {
+    flex-direction: column; /* Coloca el título y el contenido en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Alinea horizontalmente en el centro */
+  }
 
+  .card-content, .cristoFoto {
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-bottom: 20px; /* Añade espacio entre el contenido y la imagen en la columna */
+  }
+
+  .video-content {
+    flex-direction: column; /* Apila el video y el texto verticalmente */
+    gap: 10px; /* Ajusta el espacio entre el video y el texto */
+  }
+  h2
+  {
+    font-size: 24px;
+  }
+
+  .cristoFoto {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+  }
+
+  .card h3
+  {
+    font-size: 18px;
+  }
+  .card2 h3
+  {
+    font-size: 18px;
+  }
+  .slide iframe {
+    width: 100px;
+    height: 100px;
+  }
+  .video-content
+  {
+    width: 800px;
+    height: auto;
+  }
+}
 
