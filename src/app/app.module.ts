@@ -35,7 +35,14 @@ import { PreparationComponent } from './preparation/preparation.component';
       { path: 'your-race', component: TuCarreraComponent },
       {path: 'sobreBmw', component: SobreBmwComponent},
       {path: "preparation", component: PreparationComponent},
-    ])
+    ],
+    
+    //Con estos dos permito ir a secciones de los componentes
+    {
+      scrollPositionRestoration: 'enabled',  // Restaura la posición del scroll
+      anchorScrolling: 'enabled'             // Habilita el desplazamiento a los fragmentos
+    })
+
   ],
   providers: [],
   bootstrap: [AppComponent],

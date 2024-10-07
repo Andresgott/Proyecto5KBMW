@@ -19,15 +19,20 @@
               <li class="nav-item dropdown dropdown-hover">
                  <a routerLink="/registration" routerLinkActive="active" id="nav-item-1691" class="nav-link dropdown-toggle" title="Registro" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">REGISTRO</span></a>
                  <ul class="dropdown-menu" aria-labelledby="nav-item-1691">
-                    <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item" title="Registration information"><span class="dropdown-text">Registrarse</span></a></li>
-                    <li><a routerLink="/registration" routerLinkActive="active" class="dropdown-item" title="Extras"><span class="dropdown-text">Extras</span></a></li>
+                    <li><a [routerLink]="['/registration']" fragment="registro" routerLinkActive="active" class="dropdown-item" title="Registration information"><span class="dropdown-text">Registrarse</span></a></li>
+                    <li>
+                     <a [routerLink]="['/registration']" fragment="extras" routerLinkActive="active" class="dropdown-item" title="Extras">
+                       <span class="dropdown-text">Extras</span>
+                     </a>
+                   </li>
+                   
                  </ul>
               </li>
               <li class="nav-item dropdown dropdown-hover">
                  <a href="/en/preparation/about-the-event" id="nav-item-1693" class="nav-link dropdown-toggle" title="Preparation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">PREPARACION</span></a>
                  <ul class="dropdown-menu" aria-labelledby="nav-item-1693">
-                    <li><a routerLink="/preparation" routerLinkActive="active" class="dropdown-item" title="Sobre el evento"><span class="dropdown-text">Sobre el evento</span></a></li>
-                    <li><a routerLink="/preparation" routerLinkActive="active" class="dropdown-item" title="Event Info"><span class="dropdown-text">Informacion importante</span></a></li>
+                    <li><a [routerLink]="['/preparation']" fragment="sobre-el-evento-section" routerLinkActive="active" class="dropdown-item" title="Sobre el evento"><span class="dropdown-text">Sobre el evento</span></a></li>
+                    <li><a [routerLink]="['/preparation']" fragment="important-info" routerLinkActive="active" class="dropdown-item" title="Event Info"><span class="dropdown-text">Informacion importante</span></a></li>
                  </ul>
               </li>
               <li class="nav-item dropdown dropdown-hover">
