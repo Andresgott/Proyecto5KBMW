@@ -1,5 +1,9 @@
 <header id="page-header" class="fixed-top">
+<<<<<<< HEAD
 
+=======
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> b52c766d0d6307e38a4b8528f85970b584526c88
   <div class="header-wrap">
     <a class="navbar-brand navbar-brand-image" href=""><img class="navbar-brand-logo-normal" src="\assets\bmwCOCHArunningLogo.jpg" alt="bmw logo" height="80" width="280"></a>
      <div class="header-top">
@@ -11,6 +15,7 @@
            </ul>
         </div>
      </div>
+<<<<<<< HEAD
      <div class="header-bottom">
         <a class="mburger mburger--collapse" href="#menu"><b></b><b></b><b></b></a>
         <nav id="mainnavigation" class="bp-page-header navbar navbar-mainnavigation collapse navbar-primary navbar-has-image navbar-top">
@@ -66,4 +71,75 @@
      </div>
   </div>
   <div class="navbar-toggler d-none"></div>
+=======
+
+     <div class="header-bottom">
+      <!-- Botón de menú burger -->
+      <a class="mburger mburger--collapse" href="javascript:void(0);" (click)="toggleMenu()">
+        <b></b><b></b><b></b>
+      </a>
+
+      <!-- Navegación principal -->
+      <nav id="mainnavigation" class="bp-page-header navbar navbar-mainnavigation" [ngClass]="{'show': isMenuOpen}">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/registration" routerLinkActive="active" class="nav-link dropdown-toggle" title="Registro">
+              <span class="nav-link-text">REGISTRO</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a [routerLink]="['/registration']" fragment="registro" routerLinkActive="active" class="dropdown-item" title="Registration information"><span class="dropdown-text">Registrarse</span></a></li>
+              <li>
+                <a [routerLink]="['/registration']" fragment="extras" routerLinkActive="active" class="dropdown-item" title="Extras">
+                  <span class="dropdown-text">Extras</span>
+                </a>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/preparation" routerLinkActive="active" class="nav-link dropdown-toggle" title="Preparación">
+              <span class="nav-link-text">PREPARACIÓN</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a [routerLink]="['/preparation']" fragment="sobre-el-evento-section" routerLinkActive="active" class="dropdown-item" title="Sobre el evento"><span class="dropdown-text">Sobre el evento</span></a></li>
+              <li><a [routerLink]="['/preparation']" fragment="important-info" routerLinkActive="active" class="dropdown-item" title="Event Info"><span class="dropdown-text">Informacion importante</span></a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/your-race" routerLinkActive="active" class="nav-link dropdown-toggle" title="Tu Carrera">
+              <span class="nav-link-text">TU CARRERA</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/your-race/race-day" routerLinkActive="active" class="dropdown-item">Día de la Carrera</a></li>
+              <li><a routerLink="/your-race/results" routerLinkActive="active" class="dropdown-item">Resultados</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a class="nav-link dropdown-toggle" title="Sobre BMW">
+              <span class="nav-link-text">SOBRE BMW</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a [routerLink]="['/sobreBmw']" fragment="motorsport" routerLinkActive="active" class="dropdown-item">Motorsport</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="motorrad" routerLinkActive="active" class="dropdown-item">Motorrad</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="BMWi" routerLinkActive="active" class="dropdown-item">BMWi</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="historia" routerLinkActive="active" class="dropdown-item">Historia</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="podcast" routerLinkActive="active" class="dropdown-item">Podcast</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover">
+            <a routerLink="/auspiciadores" routerLinkActive="active" class="nav-link dropdown-toggle" title="Auspiciadores">
+              <span class="nav-link-text">AUSPICIADORES</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a routerLink="/auspiciadores" routerLinkActive="active" class="dropdown-item">Nuestros Auspiciadores</a></li>
+              <li><a href="https://www.scc-events.com" class="dropdown-item" target="_blank" title="Hazte Miembro" rel="noreferrer">Hazte Miembro</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+>>>>>>> b52c766d0d6307e38a4b8528f85970b584526c88
 </header>

@@ -1,5 +1,11 @@
-<app-header-home></app-header-home>
-<div>
-    <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>
+<main>
+    <header class="brand-name">
+      <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
+    </header>
+    <section class="content">
+      <app-header-home></app-header-home>
+      <router-outlet></router-outlet>
+      <app-slider-sponsors></app-slider-sponsors>
+      <app-footer></app-footer>
+    </section>
+  </main>
