@@ -1,0 +1,89 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 3.5%;
+    width: 75%;
+    margin: auto;
+    font-family: "Nunito Sans";
+  }
+  
+  h1 {
+    color: #0066b1;
+    font-size: 400%;
+    font-family: "Nunito Sans";
+    padding-left: 9%;
+    padding-top: 4%;
+  }
+  /* Estilo para el título */
+  h2 {
+    color: #0066b1;
+    font-size: 1.5em;
+    font-family: "Nunito Sans";
+  }
+
+  .text
+  {
+    color: #ffffff;
+    font-size: 1.1em;
+    font-family: "Nunito Sans";
+  }
+
+  .image-window-container
+  {
+    margin: 0;
+    padding-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+
+  .img-container 
+  {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  .image
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/bck-window-img.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  .window
+  {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 2;
+  }
+
+  .text-box
+  {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 50%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    z-index: 3;
+  }
+
+  .route-image
+  {
+    width: 90%;
+    height: auto;
+  }
