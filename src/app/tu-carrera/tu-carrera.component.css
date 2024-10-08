@@ -6,13 +6,28 @@
     padding: 3.5%;
     width: 75%;
     margin: auto;
-    font-family: "Nunito Sans";
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
-  
+
+.mainImage
+{
+  max-width: 82%;
+  border-radius: 8px;
+}
+
+.imageContainer
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+
   h1 {
     color: #0066b1;
     font-size: 400%;
-    font-family: "Nunito Sans";
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     padding-left: 9%;
     padding-top: 4%;
   }
@@ -20,14 +35,26 @@
   h2 {
     color: #0066b1;
     font-size: 1.5em;
-    font-family: "Nunito Sans";
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  h3
+  {
+    color: #0066b1;
+    font-size: 36px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .card p, .card ul {
+    font-size: 24px;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .text
   {
     color: #ffffff;
     font-size: 1.1em;
-    font-family: "Nunito Sans";
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .image-window-container
@@ -40,7 +67,11 @@
     background: #fff;
   }
 
-  
+.img-container{
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
 
   .image
   {
@@ -86,21 +117,27 @@
   }
 
   .image-routes:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     transform: scale(1.02);
   }
 
   .container {
-      
+
     display: flex;
     flex-direction: row;
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     border-radius: 10px; /* Esquinas redondeadas */
-    width: 82%; 
-    margin: 20px auto; 
-    
+    width: 82%;
+    margin: 20px auto;
+
   }
 
-  
+  @media (max-width: 768px)
+  {
+    .container
+    {
+      flex-direction: column;
+    }
+  }
