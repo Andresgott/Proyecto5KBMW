@@ -47,7 +47,8 @@
               <span class="nav-link-text">TU CARRERA</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a routerLink="/your-race/race-day" routerLinkActive="active" class="dropdown-item">Día de la Carrera</a></li>
+              <li><a routerLink="/your-race" fragment="race-day" routerLinkActive="active" class="dropdown-item">Día de la Carrera</a></li>
+              <li><a routerLink="/your-race" fragment="routes" routerLinkActive="active" class="dropdown-item">Rutas</a></li>
               <li><a routerLink="/your-race/results" routerLinkActive="active" class="dropdown-item">Resultados</a></li>
             </ul>
           </li>
@@ -57,11 +58,11 @@
               <span class="nav-link-text">SOBRE BMW</span>
             </a>
             <ul class="dropdown-menu">
-              <li><a routerLink="/sobreBmw/motorsport" routerLinkActive="active" class="dropdown-item">Motorsport</a></li>
-              <li><a routerLink="/sobreBmw/motorsport" routerLinkActive="active" class="dropdown-item">Motorrad</a></li>
-              <li><a routerLink="/sobreBmw/electricos" routerLinkActive="active" class="dropdown-item">BMWi</a></li>
-              <li><a routerLink="/sobreBmw/historia" routerLinkActive="active" class="dropdown-item">Historia</a></li>
-              <li><a routerLink="/sobreBmw/historia" routerLinkActive="active" class="dropdown-item">Podcast</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="motorsport" routerLinkActive="active" class="dropdown-item">Motorsport</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="motorrad" routerLinkActive="active" class="dropdown-item">Motorrad</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="BMWi" routerLinkActive="active" class="dropdown-item">BMWi</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="historia" routerLinkActive="active" class="dropdown-item">Historia</a></li>
+              <li><a [routerLink]="['/sobreBmw']" fragment="podcast" routerLinkActive="active" class="dropdown-item">Podcast</a></li>
             </ul>
           </li>
 

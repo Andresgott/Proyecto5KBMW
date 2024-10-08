@@ -1,187 +1,200 @@
-
 <div class="video-container">
   <div class="video-content">
     <video width="40%" height="40%" loop autoplay muted>
-      <source src = '/assets/exl-01-stage-hd9.mp4' type="video/mp4">
+      <source src="/assets/exl-01-stage-hd9.mp4" type="video/mp4">
     </video>
-    <h2>Aqui aprendera todo sobre BMW</h2>
+    <h2>Aquí aprenderá todo sobre BMW</h2>
   </div>
 </div>
 
-<div class="card2">
-  <div class="card-content">
-    <h3>MOTORSPORT</h3>
-  </div>
-  <div class="slider-container">
-    <div class="arrow left" (click)="moveSlide(-1, 'imgSlider2')">&#10094;</div> <!-- Flecha izquierda -->
-    <div class="slider" id="imgSlider2">
-      <div class="slide">
-        <div class="img-wrapper">
-          <a><img class="cristoFoto" src="\assets\nuevoAuto.jpg" alt="Nuevo modelo de BMW Motorsport"></a>
-          <div class="slide-description">Nuevo modelo de BMW Motorsport</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\artCar.jpg" alt="El BMW Art Car vuelve al circuito">
-          <a href="https://www.bmw.com/es/freude/dinamica-en-forma-bmw-art-car-numero-20-de-julie-mehretu.html"><div class="slide-description">El BMW Art Car vuelve al circuito</div></a>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\nuevoAuto.jpg" alt="BMW lanza su nuevo deportivo">
-          <div class="slide-description">BMW lanza su nuevo deportivo</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\artCar.jpg" alt="La historia detrás del BMW Art Car">
-          <div class="slide-description">La historia detrás del BMW Art Car</div>
-        </div>
-      </div>
+<section id="motorsport" class="motorsport-section">
+  <div class="card2">
+    <div class="card-content">
+      <h3>MOTORSPORT</h3>
     </div>
-    <div class="arrow right" (click)="moveSlide(1, 'imgSlider2')">&#10095;</div> <!-- Flecha derecha -->
-  </div>
-</div>
-
-<div class="card">
-  <div class="card-content">
-    <h3>MOTORRAD</h3>
-  </div>
-  <div class="slider-container">
-    <div class="arrow left" (click)="moveSlide(-1, 'imgSlider3')">&#10094;</div> <!-- Flecha izquierda -->
-    <div class="slider" id="imgSlider3">
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\R-1300-GS-Adventure.jpg" alt="Titular: BMW R 1300 GS Adventure">
-          <div class="slide-description">BMW R 1300 GS Adventure</div>
+    <div class="slider-container">
+      <div class="arrow left" (click)="moveSlide(-1, 'imgSlider2')">&#10094;</div> <!-- Flecha izquierda -->
+      <div class="slider" id="imgSlider2">
+        <div class="slide">
+          <div class="img-wrapper">
+            <a><img class="cristoFoto" src="/assets/nuevoAuto.jpg" alt="Nuevo modelo de BMW Motorsport"></a>
+            <div class="slide-description">Nuevo modelo de BMW Motorsport</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/artCar.jpg" alt="El BMW Art Car vuelve al circuito">
+            <a href="https://www.bmw.com/es/freude/dinamica-en-forma-bmw-art-car-numero-20-de-julie-mehretu.html">
+              <div class="slide-description">El BMW Art Car vuelve al circuito</div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/nuevoAuto.jpg" alt="BMW lanza su nuevo deportivo">
+            <div class="slide-description">BMW lanza su nuevo deportivo</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/artCar.jpg" alt="La historia detrás del BMW Art Car">
+            <div class="slide-description">La historia detrás del BMW Art Car</div>
+          </div>
         </div>
       </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\R20.jpg" alt="Titular: BMW R20">
-          <div class="slide-description">BMW R20</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\R-1300-GS-Adventure.jpg" alt="Titular: BMW R 1300 GS Adventure">
-          <div class="slide-description">BMW R 1300 GS Adventure</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\R20.jpg" alt="Titular: BMW R20">
-          <div class="slide-description">BMW R20</div>
-        </div>
-      </div>
+      <div class="arrow right" (click)="moveSlide(1, 'imgSlider2')">&#10095;</div> <!-- Flecha derecha -->
     </div>
-    <div class="arrow right" (click)="moveSlide(1, 'imgSlider3')">&#10095;</div> <!-- Flecha derecha -->
   </div>
-</div>
+</section>
 
-
-<div class="card2">
-  <div class="card-content">
-    <h3>BMWi</h3>
-  </div>
-  <div class="slider-container">
-    <div class="arrow left" (click)="moveSlide(-1, 'imgSlider4')">&#10094;</div> <!-- Flecha izquierda -->
-    <div class="slider" id="imgSlider4">
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\parrillas.jpg" alt="Titular: El futuro eléctrico de BMWi">
-          <div class="slide-description">El futuro eléctrico de BMWi</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\parrillas.jpg" alt="Titular: Innovación en diseño con BMWi">
-          <div class="slide-description">Innovación en diseño con BMWi</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\parrillas.jpg" alt="Titular: BMWi: Liderando el cambio">
-          <div class="slide-description">BMWi: Liderando el cambio</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\parrillas.jpg" alt="Titular: Sostenibilidad en cada kilómetro">
-          <div class="slide-description">Sostenibilidad en cada kilómetro</div>
-        </div>
-      </div>
+<section id="motorrad" class="motorrad-section">
+  <div class="card">
+    <div class="card-content">
+      <h3>MOTORRAD</h3>
     </div>
-    <div class="arrow right" (click)="moveSlide(1, 'imgSlider4')">&#10095;</div> <!-- Flecha derecha -->
-  </div>
-</div>
-
-
-<div class="card">
-  <div class="card-content">
-    <h3>HISTORIA</h3>
-  </div>
-  <div class="slider-container">
-    <div class="arrow left" (click)="moveSlide(-1, 'imgSlider1')">&#10094;</div> <!-- Flecha izquierda -->
-    <div class="slider" id="imgSlider1">
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\parrillas.jpg" alt="Titular: La evolución de las parrillas BMW">
-          <a href="https://www.bmw.com/es/design/parrilla-bmw-el-cambio-del-emblema-con-el-tiempo.html"><div class="slide-description">La evolución de las parrillas BMW</div></a>
+    <div class="slider-container">
+      <div class="arrow left" (click)="moveSlide(-1, 'imgSlider3')">&#10094;</div> <!-- Flecha izquierda -->
+      <div class="slider" id="imgSlider3">
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/R-1300-GS-Adventure.jpg" alt="BMW R 1300 GS Adventure">
+            <div class="slide-description">BMW R 1300 GS Adventure</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/R20.jpg" alt="BMW R20">
+            <div class="slide-description">BMW R20</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/R-1300-GS-Adventure.jpg" alt="BMW R 1300 GS Adventure">
+            <div class="slide-description">BMW R 1300 GS Adventure</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/R20.jpg" alt="BMW R20">
+            <div class="slide-description">BMW R20</div>
+          </div>
         </div>
       </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\hofmeister.png" alt="Titular: El detalle Hofmeister en la historia de BMW">
-          <a href="https://www.bmw.com/es/freude/la-curva-de-hofmeister-de-bmw.html"><div class="slide-description">El detalle Hofmeister en la historia de BMW</div></a>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\logoAntiguo.jpg" alt="Titular: El logo clásico de BMW">
-          <a href="https://www.bmw.com/es/automotive-life/logo-BMW-significado-e-historia1.html"><div class="slide-description">Historia del logo BMW</div></a>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="img-wrapper">
-          <img class="cristoFoto" src="\assets\freudeAmFahren.jpg" alt="Titular: La evolución del logo de BMW">
-          <div class="slide-description">Origen del slogan BMW</div>
-        </div>
-      </div>
+      <div class="arrow right" (click)="moveSlide(1, 'imgSlider3')">&#10095;</div> <!-- Flecha derecha -->
     </div>
-    <div class="arrow right" (click)="moveSlide(1, 'imgSlider1')">&#10095;</div> <!-- Flecha derecha -->
   </div>
-</div>
+</section>
 
-
-<div class="card2">
-  <div class="card-content">
-    <h3>PODCAST BMW: CHANGING LANES</h3>
-  </div>
-  <div class="slider-container">
-    <div class="arrow left" (click)="moveSlide(-1, 'podcastSlider')">&#10094;</div> <!-- Flecha izquierda -->
-    <div class="slider" id="podcastSlider">
-      <div class="slide">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1N5uWwwAxc3ohOcHMZssLA/video?utm_source=generator" width="500" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      <div class="slide">
-        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/episode/0hSxixvuLDwdgD7IvigI2E/video?utm_source=generator" width="500" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      <div class="slide">
-        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      <div class="slide">
-        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      <div class="slide">
-        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
-      <div class="slide">
-        <iframe  style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </div>
+<section id="BMWi" class="bmwi-section">
+  <div class="card2">
+    <div class="card-content">
+      <h3>BMWi</h3>
     </div>
-    <div class="arrow right" (click)="moveSlide(1, 'podcastSlider')">&#10095;</div> <!-- Flecha derecha -->
+    <div class="slider-container">
+      <div class="arrow left" (click)="moveSlide(-1, 'imgSlider4')">&#10094;</div> <!-- Flecha izquierda -->
+      <div class="slider" id="imgSlider4">
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/parrillas.jpg" alt="El futuro eléctrico de BMWi">
+            <div class="slide-description">El futuro eléctrico de BMWi</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/parrillas.jpg" alt="Innovación en diseño con BMWi">
+            <div class="slide-description">Innovación en diseño con BMWi</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/parrillas.jpg" alt="BMWi: Liderando el cambio">
+            <div class="slide-description">BMWi: Liderando el cambio</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/parrillas.jpg" alt="Sostenibilidad en cada kilómetro">
+            <div class="slide-description">Sostenibilidad en cada kilómetro</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow right" (click)="moveSlide(1, 'imgSlider4')">&#10095;</div> <!-- Flecha derecha -->
+    </div>
   </div>
-</div>
+</section>
 
+<section id="historia" class="historia-section">
+  <div class="card">
+    <div class="card-content">
+      <h3>HISTORIA</h3>
+    </div>
+    <div class="slider-container">
+      <div class="arrow left" (click)="moveSlide(-1, 'imgSlider1')">&#10094;</div> <!-- Flecha izquierda -->
+      <div class="slider" id="imgSlider1">
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/parrillas.jpg" alt="La evolución de las parrillas BMW">
+            <a href="https://www.bmw.com/es/design/parrilla-bmw-el-cambio-del-emblema-con-el-tiempo.html">
+              <div class="slide-description">La evolución de las parrillas BMW</div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/hofmeister.png" alt="El detalle Hofmeister en la historia de BMW">
+            <a href="https://www.bmw.com/es/freude/la-curva-de-hofmeister-de-bmw.html">
+              <div class="slide-description">El detalle Hofmeister en la historia de BMW</div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/logoAntiguo.jpg" alt="Historia del logo BMW">
+            <a href="https://www.bmw.com/es/automotive-life/logo-BMW-significado-e-historia1.html">
+              <div class="slide-description">Historia del logo BMW</div>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="img-wrapper">
+            <img class="cristoFoto" src="/assets/freudeAmFahren.jpg" alt="Origen del slogan BMW">
+            <div class="slide-description">Origen del slogan BMW</div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow right" (click)="moveSlide(1, 'imgSlider1')">&#10095;</div> <!-- Flecha derecha -->
+    </div>
+  </div>
+</section>
+
+<section id="podcast" class="podcast-section">
+  <div class="card2">
+    <div class="card-content">
+      <h3>PODCAST BMW: CHANGING LANES</h3>
+    </div>
+    <div class="slider-container">
+      <div class="arrow left" (click)="moveSlide(-1, 'podcastSlider')">&#10094;</div> <!-- Flecha izquierda -->
+      <div class="slider" id="podcastSlider">
+        <div class="slide">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1N5uWwwAxc3ohOcHMZssLA/video?utm_source=generator" width="500" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="slide">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0hSxixvuLDwdgD7IvigI2E/video?utm_source=generator" width="500" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="slide">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="slide">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="slide">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="slide">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3HcX5we6aw202sHq3etiPA/video?utm_source=generator" width="500" height="500" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="arrow right" (click)="moveSlide(1, 'podcastSlider')">&#10095;</div> <!-- Flecha derecha -->
+    </div>
+  </div>
+</section>
