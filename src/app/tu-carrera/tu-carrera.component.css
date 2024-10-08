@@ -40,12 +40,7 @@
     background: #fff;
   }
 
-  .img-container 
-  {
-    position: relative;
-    width: 400px;
-    height: 400px;
-  }
+  
 
   .image
   {
@@ -82,8 +77,30 @@
     z-index: 3;
   }
 
-  .route-image
-  {
-    width: 90%;
+  .image-routes{
+    width: 97%;
     height: auto;
+    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
   }
+
+  .image-routes:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.02);
+  }
+
+  .container {
+      
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: 82%; 
+    margin: 20px auto; 
+    
+  }
+
+  
