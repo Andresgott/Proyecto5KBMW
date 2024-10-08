@@ -3,6 +3,7 @@
   justify-content:center; /* Centra los elementos horizontalmente */
   align-items: center;     /* Alinea los elementos verticalmente */
   height: 60vh;           /* O la altura que desees */
+  margin-top: 10%;
 }
 
 .video-content {
@@ -41,10 +42,30 @@ video
   margin-right: 20px; /* Espacio a la derecha entre el contenido y la imagen */
 }
 
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .cristoFoto {
-  max-width: 380px; /* Ajusta el tamaño máximo de la imagen */
-  height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 8px; /* Bordes redondeados para la imagen */
+  width: 100%; /* Ajusta el tamaño de la imagen */
+  height: auto;
+}
+
+.slide-description {
+  position: absolute;
+  bottom: 20px; /* Alinea la descripción en la parte inferior de la imagen */
+  left: 0;
+  right: 0;
+  color: white; /* Color de texto blanco */
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+  width: 100%; /* Asegura que ocupe todo el ancho de la imagen */
+  font-family:BMWTypeNextLatin, Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
 }
 
 .cristoFoto:hover
@@ -80,6 +101,11 @@ video
 
 .card ul li {
   margin-bottom: 10px;
+}
+
+.card2 .slide-description
+{
+  font-family:BMWTypeNextLatin, Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
 }
 
 
@@ -147,6 +173,34 @@ video
   margin-right: 0px;
   font-family:BMWTypeNextLatin, Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
 }
+
+/* Flechas de navegación */
+.arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  padding: 10px;
+  color: #0066B1;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente */
+  border-radius: 50%;
+  z-index: 10; /* Asegura que las flechas estén por encima de las imágenes */
+}
+
+/* Flecha izquierda */
+.arrow.left {
+  left: 0px; /* Coloca la flecha a la izquierda, fuera del contenedor */
+}
+
+/* Flecha derecha */
+.arrow.right {
+  right: 0px; /* Coloca la flecha a la derecha, fuera del contenedor */
+}
+
+
+
+
 
 @media (max-width: 768px)
 {

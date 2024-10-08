@@ -7,6 +7,7 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class SliderSponsorsComponent implements AfterViewInit {
   currentIndex: number = 0;
+  slideInterval: any;
 
   ngAfterViewInit() {
     this.autoSlide('imgSlider5', 5000); // Inicia el slider automático
@@ -16,38 +17,60 @@ export class SliderSponsorsComponent implements AfterViewInit {
     const slider = document.getElementById(sliderId);
     if (slider) {
       const slides = slider.getElementsByClassName('slide');
-      let index = 0;
-      const slidesToShow = 2; // Mostrar dos slides a la vez
-      const totalSlides = Math.ceil(slides.length / slidesToShow); // El número total de grupos de 2 slides
+      const totalSlides = slides.length;
+      const visibleSlides = 3; // Slides visibles a la vez
 
-      setInterval(() => {
-        index = (index + 1) % totalSlides; // Avanzar al siguiente conjunto de 2 slides
-        const translateX = index * (100 / slidesToShow); // Calcular el porcentaje correcto para mover
-        (slider as HTMLElement).style.transform = `translateX(-${translateX}%)`;
+      this.slideInterval = setInterval(() => {
+        this.currentIndex++;
+        if (this.currentIndex >= totalSlides - visibleSlides) {
+          this.resetSlider(sliderId, slides[0].clientWidth); // Reiniciar al primer slide
+        } else {
+          this.moveSlider(sliderId, slides[0].clientWidth);
+        }
       }, delay);
     } else {
       console.error(`Slider with id ${sliderId} not found`);
     }
   }
 
+  resetSlider(sliderId: string, slideWidth: number) {
+    const slider = document.getElementById(sliderId);
+    if (slider) {
+      slider.style.transition = 'none'; // Sin transición al resetear
+      this.currentIndex = 0; // Reinicia el índice
+      slider.style.transform = `translateX(0px)`; // Vuelve al principio
+      setTimeout(() => {
+        slider.style.transition = 'transform 0.5s ease-in-out'; // Restablece la transición
+      }, 50); // Pequeño retraso para que el cambio sea perceptible
+    }
+  }
+
+  moveSlider(sliderId: string, slideWidth: number) {
+    const slider = document.getElementById(sliderId);
+    if (slider) {
+      slider.style.transform = `translateX(-${this.currentIndex * slideWidth}px)`;
+    }
+  }
+
   moveSlide(direction: number, sliderId: string) {
+    clearInterval(this.slideInterval); // Detiene el autoSlide mientras se navega manualmente
     const slider = document.getElementById(sliderId);
     if (slider) {
       const slides = slider.getElementsByClassName('slide');
       const totalSlides = slides.length;
-      const slideWidth = slides[0].clientWidth;
+      const visibleSlides = 2;
 
       this.currentIndex += direction;
 
+      // Controlar los límites del índice
       if (this.currentIndex < 0) {
-        this.currentIndex = totalSlides - 1; // Volver al último slide si se pasa del primero
-      } else if (this.currentIndex >= totalSlides) {
-        this.currentIndex = 0; // Volver al primer slide si se pasa del último
+        this.currentIndex = totalSlides - visibleSlides; // Ir al último grupo de slides
+      } else if (this.currentIndex >= totalSlides - visibleSlides) {
+        this.currentIndex = 0; // Volver al primer slide
       }
 
-      slider.style.transform = `translateX(-${this.currentIndex * slideWidth}px)`;
-    } else {
-      console.error(`Slider with id ${sliderId} not found`);
+      this.moveSlider(sliderId, slides[0].clientWidth);
+      this.autoSlide(sliderId, 5000); // Reiniciar el autoSlide después del movimiento manual
     }
   }
 }

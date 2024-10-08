@@ -1,41 +1,42 @@
+
 /* Estilo general del contenedor del slider */
 .slider-container {
-  width: 35%;
-  overflow: hidden;
-  margin: 0 auto;
+  width: 35%; /* Ajusta el ancho para que el slider no ocupe toda la pantalla */
+  overflow: hidden; /* Oculta el contenido fuera del área visible */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centrar el contenido del slider */
+  align-items: center; /* Centrar verticalmente */
   position: relative; /* Para posicionar las flechas */
+  margin: 0 auto; /* Centramos horizontalmente el contenedor en la página */
   margin-bottom: 10%;
 }
 
 /* Estilo del slider */
 .slider {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Asegura que el contenido del slider esté centrado */
   align-items: center;
   transition: transform 0.5s ease-in-out;
   width: 100%; /* Ocupa todo el contenedor */
 }
 
-
+/* Estilo de cada slide */
 .slider-container .slide {
-  flex: 0 0 25%; /* Ajusta para que se vean 3 slides al mismo tiempo */
+  flex: 0 0 33%; /* Ajusta para que se vean 2 slides al mismo tiempo */
   box-sizing: border-box;
   display: inline-block;
   padding: 0 10px; /* Espaciado entre imágenes */
 }
 
-
+/* Estilo de las imágenes dentro de cada slide */
 .slider img {
-  width: 100%; /* Ocupa todo el ancho del contenedor de la diapositiva */
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor del slide */
   height: auto; /* Mantiene la proporción de las imágenes */
   object-fit: contain; /* Evita que las imágenes se corten */
 }
 
 /* Flechas de navegación */
-.arrow{
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -50,17 +51,18 @@
 
 /* Flecha izquierda */
 .arrow.left {
-  left: 0px; /* Coloca la flecha a la izquierda, fuera del contenedor */
+  left: -40px; /* Ajusta la posición de la flecha para que esté separada del slider */
 }
 
 /* Flecha derecha */
 .arrow.right {
-  right: 0px; /* Coloca la flecha a la derecha, fuera del contenedor */
+  right: -40px; /* Ajusta la posición de la flecha para que esté separada del slider */
 }
 
 /* Ajustes adicionales */
 .titulo {
-  margin: 0 auto;
+  /*margin: 150px auto;*/
+  margin-top: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
