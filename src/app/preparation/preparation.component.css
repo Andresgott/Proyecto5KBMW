@@ -11,47 +11,47 @@ h1 {
     padding-left: 9%;
     padding-right: 9%;
     font-size: 1.5em;
-    
+
     }
 
     .container {
-      
+
       display: flex;
       flex-direction: row;
       background-color: white;
       padding: 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
       border-radius: 10px; /* Esquinas redondeadas */
-      width: 82%; 
-      margin: 20px auto; 
-      
+      width: 82%;
+      margin: 20px auto;
+
     }
-    
-    
+
+
 
     .image-section img {
       width: 100%;
       height: auto;
-      
-    }
-    
 
-    
-    
+    }
+
+
+
+
     .text-section h2 {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       color: #0066b1;
       font-size: 2em;
       margin-top: 1%;
     }
-    
+
     .text-section p {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       color: #333;
       font-size: 1.3em;
       line-height: 1.5;
       padding-left: 0;
-      
+
     }
 
     .card {
@@ -71,11 +71,11 @@ h1 {
       padding-left: 3.5%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
-    
+
     .card ul li {
       margin-bottom: 10px;
     }
-    
+
     /* Estilo para el texto en negrita */
     .card b {
       font-weight: bold;
@@ -88,7 +88,7 @@ h1 {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
-    
+
 
     .image-routes{
       width: 97%;
@@ -99,9 +99,22 @@ h1 {
     }
 
     .image-routes:hover {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
       transform: scale(1.02);
     }
-    
 
-  
+    .sobre-el-evento-section
+    {
+      width: 40%;
+      height: auto;
+    }
+
+    @media (max-width: 768px)
+    {
+      .container
+      {
+        flex-direction: column;
+      }
+    }
+
+

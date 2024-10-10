@@ -17,7 +17,7 @@ h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding-left: 9%;
   padding-top: 6%;
-  
+
 }
 /* Estilo para el título */
 h2 {
@@ -58,7 +58,7 @@ h2 {
   text-transform: uppercase; /* Texto en mayúsculas */
   text-align: center; /* Centrar el texto */
   text-decoration: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -151,7 +151,7 @@ padding-left: 0%;
 }
 
 .container {
-  display: flex; 
+  display: flex;
 }
 
 .image-container {
@@ -164,5 +164,25 @@ padding-left: 0%;
 }
 
 .image-maraton {
-  width: 100%; 
+  width: 100%;
+  height: auto;
 }
+
+
+
+
+@media (max-width: 768px){
+  .container{
+    flex-direction: column;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+
+  .product-item
+  {
+    width: 100%;
+  }
+}
+

@@ -220,10 +220,6 @@ video
     margin-bottom: 20px; /* Añade espacio entre el contenido y la imagen en la columna */
   }
 
-  .video-content {
-    flex-direction: column; /* Apila el video y el texto verticalmente */
-    gap: 10px; /* Ajusta el espacio entre el video y el texto */
-  }
   h2
   {
     font-size: 24px;
@@ -249,8 +245,13 @@ video
   }
   .video-content
   {
-    width: 800px;
+    flex-direction: column;
     height: auto;
   }
+  .video-container
+  {
+    height: 30vh;
+  }
+
 }
 
