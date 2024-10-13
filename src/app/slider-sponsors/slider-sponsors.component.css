@@ -1,7 +1,7 @@
 
 /* Estilo general del contenedor del slider */
 .slider-container {
-  width: 35%; /* Ajusta el ancho para que el slider no ocupe toda la pantalla */
+  width: 60%; /* Ajusta el ancho para que el slider no ocupe toda la pantalla */
   overflow: hidden; /* Oculta el contenido fuera del área visible */
   display: flex;
   justify-content: center; /* Centrar el contenido del slider */
@@ -22,7 +22,7 @@
 
 /* Estilo de cada slide */
 .slider-container .slide {
-  flex: 0 0 33%; /* Ajusta para que se vean 2 slides al mismo tiempo */
+  flex: 0 0 25%; /* Ajusta para que se vean 2 slides al mismo tiempo */
   box-sizing: border-box;
   display: inline-block;
   padding: 0 10px; /* Espaciado entre imágenes */
