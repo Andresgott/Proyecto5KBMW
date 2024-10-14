@@ -62,7 +62,7 @@
 /* Ajustes adicionales */
 .titulo {
   /*margin: 150px auto;*/
-  margin-top: 250px;
+  margin-top: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
