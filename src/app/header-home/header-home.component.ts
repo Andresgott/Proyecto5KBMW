@@ -8,7 +8,14 @@ import { Component } from '@angular/core';
 export class HeaderHomeComponent {
   isMenuOpen: boolean = false;
 
+
+  // Método para abrir o cerrar el menú manualmente
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  // Método para cerrar el menú automáticamente
+  closeMenu() {
+    this.isMenuOpen = false;
   }
 }
