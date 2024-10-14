@@ -12,7 +12,7 @@ import { SobreBmwComponent } from './sobre-bmw/sobre-bmw.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SliderSponsorsComponent } from './slider-sponsors/slider-sponsors.component';
 import { PreparationComponent } from './preparation/preparation.component';
-
+import { Location, HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -48,7 +48,7 @@ import { PreparationComponent } from './preparation/preparation.component';
     })
 
   ],
-  providers: [],
+  providers: [Location, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 
 })
