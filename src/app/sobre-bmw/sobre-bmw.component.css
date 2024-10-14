@@ -120,8 +120,8 @@ video
 
 
 .slide iframe {
-  width: 400px;
-  height: 400px;
+  width: 310px;
+  height: 310px;
 }
 
 .slide iframe:hover
@@ -203,6 +203,28 @@ video
   right: 0px; /* Coloca la flecha a la derecha, fuera del contenedor */
 }
 
+.titulo
+{
+  margin-top: 20%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+
+}
+
+.titulo h3
+{
+  font-size: 36px;
+  border-radius: 0%;
+  margin-bottom: 15px;
+  color: #0066B1;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family:BMWTypeNextLatin, Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+}
+
 
 
 
@@ -210,6 +232,7 @@ video
 @media (max-width: 768px)
 {
   .card, .card2 {
+    margin-top: 20%;
     flex-direction: column; /* Coloca el título y el contenido en una columna */
     justify-content: center; /* Centra los elementos verticalmente */
     align-items: center; /* Alinea horizontalmente en el centro */
@@ -226,7 +249,7 @@ video
   }
 
   .cristoFoto {
-    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+    max-width: 250px; /* Ajusta el tamaño máximo de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 8px; /* Bordes redondeados para la imagen */
   }
@@ -240,8 +263,8 @@ video
     font-size: 18px;
   }
   .slide iframe {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   .video-content
   {
@@ -250,8 +273,19 @@ video
   }
   .video-container
   {
-    height: 30vh;
+    display: none;
   }
+  .titulo
+  {
+    display: flex;
+  }
+
+  .slider
+  {
+    width: 100%;
+  }
+
+
 
 }
 
