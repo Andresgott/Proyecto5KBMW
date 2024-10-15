@@ -169,6 +169,11 @@ padding-left: 0%;
 }
 
 
+#pdf-viewer {
+  width: 100%;
+  min-height: 300px; /* Altura mínima en todas las pantallas */
+}
+
 
 
 @media (max-width: 768px){
@@ -183,6 +188,10 @@ padding-left: 0%;
   .product-item
   {
     width: 100%;
+  }
+
+  #pdf-viewer {
+    height: 300px;
   }
 }
 

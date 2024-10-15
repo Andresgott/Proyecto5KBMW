@@ -88,6 +88,24 @@ h1 {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
+    .button {
+      display: inline-block; /* Hace que el enlace sea como un botón */
+      background-color: #0066b1; /* Color azul */
+      color: white; /* Texto blanco */
+      padding: 15px 30px; /* Tamaño del botón */
+      font-size: 16px; /* Tamaño de la fuente */
+      font-weight: bold; /* Texto en negrita */
+      text-transform: uppercase; /* Texto en mayúsculas */
+      text-align: center; /* Centrar el texto */
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 1.7%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      left: 20%;
+    }
 
 
     .image-routes{
@@ -114,6 +132,10 @@ h1 {
       .container
       {
         flex-direction: column;
+      }
+
+      #pdf-viewer {
+        height: 300px;
       }
     }
 
