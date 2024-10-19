@@ -48,6 +48,8 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 5%;
+  align-items: center;
+  justify-items: center;
 }
 
 .Sponsors
@@ -63,12 +65,32 @@
 {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-items: center;
 }
 
 .logos2
 {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.logos3
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.logos4
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
 }
 
 .Partners
